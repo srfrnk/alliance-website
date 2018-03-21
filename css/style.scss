@@ -7,7 +7,7 @@ input {
     -webkit-appearance: none;
 }
 .top-alliance{
-	background: url('../img/hero.jpg') no-repeat;
+	background: url('../img/hero.jpg') no-repeat center;
 	background-size: cover;
 	padding-top: 25px;
 	text-align: center;
@@ -20,6 +20,15 @@ input {
 		font-weight: 400;
 		span{
 			text-decoration: underline;
+		}
+	}
+	.white-logos{
+		border-top: 1px solid #FFF;
+		border-bottom: 1px solid #FFF;
+		// margin-bottom: 210px;
+		text-align: center;
+		img{
+			width: 80%;
 		}
 	}
 	h1{
@@ -45,14 +54,16 @@ input {
 	}
 	p{
 		font-weight: 400;
-		font-size: 15px;
+		font-size: 16px;
 		line-height: 25px;
 		margin: 0 0 120px;
 	}
 	.network{
-		background: url('../img/network.png') no-repeat;
+		background: url('../img/network.png') no-repeat center;
 		background-size: cover;
 		height: 24.0343347639485vw;
+		// margin-top: -20.0343347639485vw;
+		
 	}
 }
 .decentralized{
@@ -100,7 +111,7 @@ input {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0,0,0,0.5);
+		background: rgba(0,0,0,0.7);
 	}
 }
 .members{
@@ -189,7 +200,7 @@ input {
 	a{
 		color: $orange;
 		text-decoration: underline;
-		font-size: 15px;
+		font-size: 18px;
 		font-weight: 500;
 	}
 }
@@ -205,9 +216,9 @@ input {
 	p{
 		color: #363840;
 		font-weight: 300;
-		font-size: 15px;
+		font-size: 16px;
 		margin: 0 0 70px;
-		padding: 0 15%;
+		padding: 0 10%;
 	}
 	.brands a{
 			display: inline-block;
@@ -305,6 +316,9 @@ label.error{
 		.text-left img{
 			height: 50px;
 		}
+		.white-logos{
+			margin-bottom: 60px;
+		}
 	}
 	video{
 		display: none;
@@ -351,11 +365,39 @@ label.error{
 	}
 	.colab{
 		height: 123.14285714285714vw;
+		h2{
+			font-size: 20px;
+		}
+		h3{
+			font-size: 18px;
+		}
 	}
 	.team .brands a{
 		margin: 0 20px;
 		img{
 			height: 60px;
+		}
+	}
+	.team p{
+		padding: 0px;
+	}
+	.top-alliance{
+		h1{
+			font-size: 23px;
+			line-height: 38px;
+		}
+		h2{
+			font-size: 20px;
+		}
+		.white-logos,
+		p{
+			margin: 0 0 60px;
+			img{
+				width: 100%;
+			}
+		}
+		.network{
+			height: 50vw;
 		}
 	}
 }

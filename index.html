@@ -105,34 +105,44 @@
     	</div>
 
     	<div class="container">
-			<h1>The <span>DAV Alliance</span> is a coalition of enterprises, innovators, and leaders in the autonomous vehicle space</h1>
+    		<div class="page1">
+				<h1>The <span>DAV Alliance</span> is a coalition of enterprises, innovators, and leaders in the autonomous vehicle space</h1>
 			
-			<div class="row">
-				<div class="col-sm-10 col-sm-offset-1">
-					<p>Our purpose is to bring together members of the autonomous vehicle industry so that we may collaborate on innovations and standards for a global AV network</p>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<p>Our purpose is to bring together members of the autonomous vehicle industry so that we may collaborate on innovations and standards for a global AV network</p>
+					</div>
 				</div>
-			</div>
-			<h2>Members of the DAV Alliance Benefit From</h2>
 
-			<h3>Shared Knowledge &amp; Influence</h3>
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-					<p>Members of the DAV Alliance benefit from shared knowledge and experience amongst members, but also gain value from an interest group that could have a greater ability to influence policy and mindshare regarding autonomous vehicles across jurisdictions</p>
+				<h6>Selected Members:</h6>
+				<div class="white-logos">
+					<img src="img/alliance/white-logos.png">
 				</div>
-			</div>
+    		</div>
+
+    		<div class="page2">
+				<h2>Members of the DAV Alliance Benefit From</h2>
+
+				<h3>Shared Knowledge &amp; Influence</h3>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p>Members of the DAV Alliance benefit from shared knowledge and experience amongst members, but also gain value from an interest group that could have a greater ability to influence policy and mindshare regarding autonomous vehicles across jurisdictions</p>
+					</div>
+				</div>
 			
 
-			<h3>Blockchain Technology &amp; The DAV Protocol</h3>
+				<h3>Blockchain Technology &amp; The DAV Protocol</h3>
 			
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-					<p>Access to the latest technology innovations, trends, and learnings within the Blockchain industry from leading technologists, experts and strategists. Access to blockchain applications and the DAV Protocol specific to the future of transportation</p>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p>Access to the latest technology innovations, trends, and learnings within the Blockchain industry from leading technologists, experts and strategists. Access to blockchain applications and the DAV Protocol specific to the future of transportation</p>
+					</div>
 				</div>
-			</div>
 
-    	</div>
+    		</div>
 
-    	<div class="network"></div>
+		</div>
+		<div class="network"></div>
     </div>
 
     <div class="decentralized">
@@ -164,6 +174,9 @@
               <a href="http://www.advancedaircraftcompany.com/" target="_blank"><img src="img/alliance/aac.png"></a>
             </div>
             <div class="col-lg-3 col-sm-4 col-xs-6">
+              <a href="http://www.auvsi.org/" target="_blank"><img src="img/alliance/auvsi.png"></a>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6">
               <a href="https://husarion.com/" target="_blank"><img src="img/alliance/husarion.png"></a>
             </div>
             <div class="col-lg-3 col-sm-4 col-xs-6">
@@ -178,7 +191,7 @@
             <div class="col-lg-3 col-sm-4 col-xs-6">
               <a href="http://www.droneterminus.com" target="_blank"><img src="img/alliance/drone-terminus.jpg"></a>
             </div>
-            <div class="col-lg-3 col-sm-4 col-xs-6">
+            <div class="col-lg-12 col-sm-4 col-xs-6">
               <a href="https://www.airmediaindustries.com/" target="_blank"><img src="img/alliance/air-media.jpg"></a>
             </div>
           </div>
@@ -190,7 +203,7 @@
     	<div class="container">
     		<div class="row">
 				<div class="col-sm-6 col-sm-offset-3">
-					<form id="contactForm" action="https://formspree.io/alick@dav.network" method="POST">
+					<form id="contactForm" action="" method="POST">
         	   			<input type="hidden" name="_subject" value="New member joining the Alliance!" />
         	   			<input type="hidden" name="_cc" value="noam@dav.network" />
         	   			<input type="hidden" name="_cc" value="john@dav.network" />
@@ -264,7 +277,7 @@
     <footer id="contact">
       <div class="container">
 
-		<div class="social">
+		<div class="social hide">
         	<a href="http://t.me/DAVNetwork" target="_blank"><img src="img/icons/telegram-footer.png"></a>
         	<a href="https://github.com/DAVFoundation" target="_blank"><img src="img/icons/github-footer.png"></a>
         	<a href="https://twitter.com/DavNetwork" target="_blank"><img src="img/icons/twitter-footer.png"></a>
@@ -333,7 +346,20 @@
     	  $('.modal-dialog').css('padding-top', modalTopPadding +'px');
     	});
 
-     	$("#contactForm1").validate({
+    	//full page height
+    	var windowWidth = $(window).width();
+    	if (windowWidth > 1025) {
+    		var windowHeight = $(window).height();
+			$('.page1').height(windowHeight - 95);
+	
+			$(window).on('resize',function() { 
+			  	var windowHeight = $(window).height();
+			  	$('.page1').height(windowHeight - 95);
+			});	
+    	}
+
+		//alliance form
+     	$("#contactForm").validate({
           // ignore: ":hidden",
           rules: {
               Name: {
