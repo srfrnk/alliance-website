@@ -45,7 +45,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=0.0.3"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=0.0.4"/>
 
     <!-- Bootstrap -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -117,19 +117,17 @@
       <div id="startchange"></div>
       <div class="container">
         <div class="page1">
-        <h1>The <span>DAV Alliance</span> is a coalition of enterprises, innovators, and leaders in the transportation industry</h1>
+          <div class="cell">
+            <h1>The <span>DAV Alliance</span> is a coalition of enterprises, innovators, and leaders in the transportation industry</h1>
       
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1">
-            <p>Our purpose is to bring together members of the transportation industry so that we may collaborate on innovations and standards for a global decentralized network.</p>
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <p>Our purpose is to bring together members of the transportation industry so that we may collaborate on  innovations and standards for a global decentralized network.</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="text-center" style="color: #ff6a46;min-height: 42px;"><i class="fa fa-angle-down fa-3x animated fadeInDown infinite" aria-hidden="true"></i></div>
-        <!-- <h6>Selected Members:</h6> -->
-        <div class="white-logos hide">
-          <img src="img/alliance/white-logos.png">
-        </div>
+        <div class="text-center scroll-arrow" style="color: #ff6a46;min-height: 42px;"><i class="fa fa-angle-down fa-3x animated fadeInDown infinite" aria-hidden="true"></i></div>
         </div>
 
     		<div class="page2">
@@ -384,16 +382,16 @@
        }
 
     	//full page height
-    	var windowWidth = $(window).width();
-    	if (windowWidth > 1025) {
-    		var windowHeight = $(window).height();
-			$('.page1').height(windowHeight - 95);
+   //  	var windowWidth = $(window).width();
+   //  	if (windowWidth > 1025) {
+   //  		var windowHeight = $(window).height();
+			// $('.page1').height(windowHeight - 95);
 	
-			$(window).on('resize',function() { 
-			  	var windowHeight = $(window).height();
-			  	$('.page1').height(windowHeight - 95);
-			});	
-    	}
+			// $(window).on('resize',function() { 
+			//   	var windowHeight = $(window).height();
+			//   	$('.page1').height(windowHeight - 95);
+			// });	
+   //  	}
 
 		//alliance form
      	$("#contactForm").validate({

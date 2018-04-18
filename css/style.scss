@@ -22,6 +22,21 @@ input {
 			text-decoration: underline;
 		}
 	}
+	.page1{
+		position: relative;
+		height: calc(100vh - 120px);
+		display: table;
+		.cell{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.scroll-arrow{
+		    position: absolute;
+		    bottom: 50px;
+    		left: 50%;
+    		margin-left: -13px;
+		}
+	}
 	.white-logos{
 		border-top: 1px solid #FFF;
 		border-bottom: 1px solid #FFF;
@@ -35,7 +50,7 @@ input {
 		font-weight: 300;
 		font-size: 36px;
 		line-height: 55px;
-		margin: 80px 0 30px;
+		margin: 0 0 30px;
 		span{
 			font-weight: 700;
 			color: $orange;
@@ -399,5 +414,8 @@ label.error{
 		.network{
 			height: 50vw;
 		}
+	}
+	.top-alliance .page1 {
+    	height: calc(100vh - 75px);
 	}
 }
