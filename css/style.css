@@ -218,14 +218,16 @@ input {
     padding: 0 50px; }
 
 footer {
-  padding: 20px 0 80px; }
-  footer .social {
-    text-align: center; }
-    footer .social a {
-      display: inline-block;
-      margin: 20px 23px; }
-      footer .social a img {
-        height: 50px; }
+  padding: 100px 0 0; }
+  footer .footer-gray {
+    background: #333333;
+    padding: 35px 0;
+    color: #FFF; }
+  footer .social a {
+    display: inline-block;
+    margin: 20px 23px; }
+    footer .social a img {
+      height: 50px; }
   footer h3 {
     font-size: 25px;
     font-weight: 700;
@@ -247,7 +249,7 @@ footer {
     margin-bottom: 30px; }
   footer .about-legal h4 {
     font-size: 15px;
-    color: #271e36;
+    color: #FFF;
     font-weight: 700;
     line-height: 30px;
     margin: 0px; }
@@ -255,10 +257,19 @@ footer {
     font-size: 15px;
     display: block;
     line-height: 30px;
-    color: #271e36; }
+    color: #FFF;
+    margin-top: 18px; }
+  footer .about-legal .social a {
+    display: inline-block;
+    min-width: 32%;
+    margin: 6px 0; }
+    footer .about-legal .social a img {
+      margin-right: 6px;
+      display: inline-block;
+      height: 38px; }
   footer .copyright {
     font-size: 13px;
-    color: #271e36;
+    color: #FFF;
     text-align: center;
     margin-top: 40px; }
 
@@ -300,8 +311,14 @@ label.error {
       height: 40px; }
 
   .colab {
-    height: 53.14285714285714vw; } }
+    height: 53.14285714285714vw; }
+
+  footer .about-legal .social a {
+    min-width: 49%; } }
 @media (max-width: 767px) {
+  footer .links {
+    text-align: center; }
+
   .top-alliance .homepage a {
     padding-right: 0px;
     font-size: 14px;
