@@ -6,6 +6,7 @@ input {
 
 .top-alliance {
   background: url("../img/hero.jpg") no-repeat center;
+  background-color: #42413E;
   background-size: cover;
   padding-top: 25px;
   text-align: center;
@@ -156,14 +157,17 @@ input {
   color: #a7a7a7;
   opacity: 1;
   font-size: 36px; }
+
 .alliance-modal .modal-content {
   border: none; }
+
 .alliance-modal a {
   display: block;
   font-size: 13px;
   text-align: center;
   font-weight: 500;
   color: #4361d8; }
+
 .alliance-modal h5 {
   font-size: 13px;
   color: #363840;
@@ -335,6 +339,7 @@ footer {
   font-size: 36px; }
   .team-modal .modal-dialog button.close:focus, .team-modal .modal-dialog button.close:active {
     outline: none; }
+
 .team-modal .modal-dialog .modal-content {
   box-shadow: none;
   border-radius: 3px; }
@@ -347,68 +352,59 @@ label.error {
 @media (max-width: 1400px) {
   .team .brands a {
     margin: 0 25px; } }
+
 @media (max-width: 1025px) {
   .top-alliance .text-left img {
     height: 50px; }
   .top-alliance .white-logos {
     margin-bottom: 60px; }
-
   video {
     display: none; }
-
   .team .brands a {
     margin: 0 15px; }
     .team .brands a img {
       height: 55px; } }
+
 @media (max-width: 992px) {
   .team .brands a {
     margin: 0 10px; }
     .team .brands a img {
       height: 40px; }
-
   .colab {
     height: 53.14285714285714vw; }
-
   footer .about-legal .social a {
     min-width: 49%; } }
+
 @media (max-width: 767px) {
   footer .links {
     text-align: center; }
-
   .top-alliance .homepage a {
     padding-right: 0px;
     font-size: 14px;
     margin-top: 10px;
     display: inline-block; }
-
   .decentralized {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px; }
-
   .join-dav h2, .join-dav p {
     padding-left: 15px;
     padding-right: 15px; }
-
   .members img {
     height: 60px;
     margin-bottom: 30px; }
-
   .colab {
     height: 123.14285714285714vw; }
     .colab h2 {
       font-size: 20px; }
     .colab h3 {
       font-size: 18px; }
-
   .team .brands a {
     margin: 0 20px; }
     .team .brands a img {
       height: 60px; }
-
   .team p {
     padding: 0px; }
-
   .top-alliance h1 {
     font-size: 23px;
     line-height: 38px; }
@@ -422,8 +418,5 @@ label.error {
       width: 100%; }
   .top-alliance .network {
     height: 50vw; }
-
   .top-alliance .page1 {
     height: calc(100vh - 75px); } }
-
-/*# sourceMappingURL=style.css.map */
